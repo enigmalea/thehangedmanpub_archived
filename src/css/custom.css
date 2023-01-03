@@ -1,0 +1,139 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Special+Elite&family=Syne+Mono&display=swap');
+
+/* Removes Docusaurus external link icon */
+[class*=iconExternalLink] {
+  display: none;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ae1e2c;
+  --ifm-color-primary-dark: #9d1b28;
+  --ifm-color-primary-darker: #941925;
+  --ifm-color-primary-darkest: #7a151f;
+  --ifm-color-primary-light: #bf2130;
+  --ifm-color-primary-lighter: #c82333;
+  --ifm-color-primary-lightest: #db2e3f;
+  --ifm-background-color: #fbfbf4;
+  --ifm-font-color-base: #302102;
+  --ifm-navbar-link-color: #302102;
+  --ifm-menu-color: #302102;
+  --ifm-footer-title-color: #302102;
+  --ifm-footer-link-color: #302102;
+  --ifm-blockquote-color: #626262;
+  --ifm-code-background: #e8e4d8;
+  --ifm-color-secondary: rgba(70, 70, 70, 0.6);
+  --ifm-color-success: rgba(0, 164, 0, 0.6);
+  --ifm-color-info: rgba(84, 199, 236, 0.6);
+  --ifm-color-warning: rgba(255, 186, 0, 0.6);
+  --ifm-color-danger: rgba(250, 56, 62, 0.6);
+  --ifm-color-secondary-dark: rgba(212, 213, 216, 0.9);
+  --ifm-color-success-dark: rgba(0, 148, 0, 0.6);
+  --ifm-color-info-dark: rgba(76, 179, 212, 0.6);
+  --ifm-color-warning-dark: rgba(230, 167, 0, 0.6);
+  --ifm-color-danger-dark: rgba(225, 50, 56, 0.6);
+  --ifm-color-secondary-contrast-background: rgb(231, 231, 231);
+  --ifm-color-success-contrast-background: rgb(212, 226, 212);
+  --ifm-color-info-contrast-background: rgb(206, 217, 221);
+  --ifm-color-warning-contrast-background: rgb(226, 219, 202);
+  --ifm-color-danger-contrast-background: rgb(226, 207, 208);
+  --ifm-navbar-background-color: #e8e4d8;
+  --ifm-footer-background-color: #e8e4d8;
+  --ifm-hover-overlay: rgba(222, 217, 200, 0.5);
+  --ifm-font-family-base: 'Comfortaa', Arial, Helvetica, sans-serif;
+  --ifm-font-family-monospace: 'Syne Mono', 'Courier New', monospace;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff7070;
+  --ifm-color-primary-dark: #ff4b4b;
+  --ifm-color-primary-darker: #ff3939;
+  --ifm-color-primary-darkest: #ff0202;
+  --ifm-color-primary-light: #ff9595;
+  --ifm-color-primary-lighter: #ffa7a7;
+  --ifm-color-primary-lightest: #ffdede;
+  --ifm-background-color: #302102;
+  --ifm-font-color-base: #fbfbf4;
+  --ifm-navbar-link-color: #fbfbf4;
+  --ifm-menu-color: #fbfbf4;
+  --ifm-footer-title-color: #fbfbf4;;
+  --ifm-footer-link-color: #fbfbf4;
+  --ifm-code-background: rgba(222, 217, 200, 0.9);
+  --ifm-color-secondary: rgba(207, 209, 211, 0.6);
+  --ifm-color-success: rgba(0, 164, 0, 0.6);
+  --ifm-color-info: rgba(84, 199, 236, 0.6);
+  --ifm-color-warning: rgba(255, 186, 0, 0.6);
+  --ifm-color-danger: rgba(250, 56, 62, 0.6);
+  --ifm-color-secondary-dark: rgba(212, 213, 216, 0.6);
+  --ifm-color-success-dark: rgba(0, 148, 0, 0.6);
+  --ifm-color-info-dark: rgba(76, 179, 212, 0.6);
+  --ifm-color-warning-dark: rgba(230, 167, 0, 0.6);
+  --ifm-color-danger-dark: rgba(225, 50, 56, 0.6);
+  --ifm-color-secondary-contrast-background: rgb(231, 231, 231);
+  --ifm-color-success-contrast-background: rgb(212, 226, 212);
+  --ifm-color-info-contrast-background: rgb(206, 217, 221);
+  --ifm-color-warning-contrast-background: rgb(226, 219, 202);
+  --ifm-color-danger-contrast-background: rgb(226, 207, 208);
+  --ifm-navbar-background-color: #1a1717;
+  --ifm-footer-background-color: #1a1717;
+  --ifm-hover-overlay: rgba(222, 217, 200, 0.9);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+.footer {
+	font-family: var(--ifm-font-family-monospace);
+	background-color: transparent;
+}
+
+/* Header Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Special Elite', Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+/* Text Styling */
+b, strong {
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-primary);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.inlineNote, .subNote {
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-secondary);
+  font-weight: normal;
+}
+
+.inlineNote::before {
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-secondary);
+  font-weight: bold;
+  content: 'NOTE:'
+}
+
+.navbar__title {
+  font: unset;
+  font-weight: bold;
+  text-transform: unset;
+  color: unset;
+}
+
+.airtable-embed-form {
+  max-width: 95vw;
+  margin: 0px auto;
+  border: none;
+}
