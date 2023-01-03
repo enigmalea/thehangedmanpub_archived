@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	title: "The Hanged Man",
-	url: "https://your-docusaurus-test-site.com",
+	url: "https://thehangedmanpub.netlify.app/",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -44,6 +44,12 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			respectPrefersColorScheme: true,
+			docs: {
+				sidebar: {
+					hideable: true,
+				},
+			},
 			navbar: {
 				title: "The Hanged Man",
 				logo: {
