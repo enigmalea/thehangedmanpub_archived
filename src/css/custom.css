@@ -5,6 +5,7 @@
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Special+Elite&family=Syne+Mono&display=swap');
+@import "/fonts/fontawesome/css/all.css";
 
 /* Removes Docusaurus external link icon */
 [class*=iconExternalLink] {
@@ -132,6 +133,7 @@ b, strong {
   color: unset;
 }
 
+/* Airtable Form Styling */
 .airtable-embed-form {
   max-width: 95vw;
   margin: 0px auto;
