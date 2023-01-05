@@ -99,11 +99,11 @@ const config = {
 						items: [
 							{
 								label: "Tumblr",
-								href: "https://hangedmandisc.tumblr.com",
+								href: "https://thehangedmanpub.tumblr.com",
 							},
 							{
 								label: "Twitter",
-								href: "https://twitter.com/hangedmandisc",
+								href: "https://twitter.com/thehangedmanpub",
 							},
 						],
 					},
