@@ -12,6 +12,9 @@ const config = {
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
+	plugins: [
+		require.resolve('docusaurus-plugin-image-zoom')
+	  ],
 
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
@@ -115,6 +118,13 @@ const config = {
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
+			},
+			zoom: {
+				selector: '.markdown img',
+				background: {
+				  light: 'rgb(255, 255, 255, 0.75)',
+				  dark: 'rgba(0, 0, 0, 0.75)'
+				},
 			},
 		}),
 };
