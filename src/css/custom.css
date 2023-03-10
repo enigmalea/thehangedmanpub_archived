@@ -133,11 +133,6 @@ b, strong {
   color: unset;
 }
 
-/* Airtable Color Adjust */
-html .airtable {
-  filter: sepia(.25) invert(1%);
- }
-
 /* Airtable Dark Mode */
 html[data-theme="dark"] .airtable {
   filter: invert(90%) hue-rotate(175deg) brightness(0.90);
