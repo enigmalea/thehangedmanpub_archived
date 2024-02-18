@@ -1,6 +1,6 @@
 # The Hanged Man (Archived)
 
-> **Warning**
+> **Warning**  
 This repo is **archived** and is unmaintained, containing version 1 of the site.
 It should no longer be used as a template for a site as the code is old and may
 not function with new versions of Docusaurus.
